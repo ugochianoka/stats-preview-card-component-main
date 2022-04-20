@@ -1,0 +1,102 @@
+body{
+    letter-spacing: 1px;
+    background-color:hsl(233, 47%, 7%);
+}
+img{
+    filter: grayscale(100%) brightness(40%) sepia(80%) hue-rotate(235deg) saturate(500%) contrast(1);
+}
+.mobile{
+display:None;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    height: 445.990px;
+    margin: auto;
+    margin-top:120px;
+    border-radius:10px;
+    width:1080px;
+    overflow: hidden;
+}
+#content{
+    background-color: hsl(244, 38%, 16%);
+    height:445.990px;
+    width:540px;
+    padding:70px;
+    padding-right: 110px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+#content h1{
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+}
+#content p{
+   color:hsla(0, 0%, 100%, 0.6);
+   font-size: 12px;
+   line-height: 20px;
+}
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    margin-top: 70px;
+}
+.stats h3{
+    margin:0;
+    font-weight:700;
+    font-family: 'Inter', sans-serif;
+    color:white;
+}
+.stats p{
+    margin-top:10px;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+
+@media(max-width:450px){
+    .container{
+        display:block;
+        margin: auto;
+        border-radius:10px;
+        width:fit-content;
+        height:auto;
+        margin-top: 80px;
+    }
+    .mobile{
+        display:block;
+        width:250px;
+        height:auto;
+    }
+    img{
+        display:none;
+    }
+    #content{
+        text-align: center;
+        background-color: hsl(244, 38%, 16%);
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        width: 250px;
+        height: auto;
+        padding:26px;
+    }
+    #content h1{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    #content p{
+        font-size: 10px;
+    }
+    .stats{
+        display:block;
+        margin-top: 20px;
+    }
+    .stats p{
+        margin-top:5px;
+        font-family: 'Lexend Deca', sans-serif;
+        color:hsla(0, 0%, 100%, 0.6);
+    }
+}
